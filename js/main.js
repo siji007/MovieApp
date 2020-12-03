@@ -2,11 +2,11 @@
 $(document).ready(() => {
     $('#searchForm').on('submit', (e) => {
         let searchText = $('#searchText').val();
-        let searchButton = $('#submit');
+        // let searchButton = $('#submit');
         // searchText.prop("disabled", true);
         // searchButton.attr("disabled", true).text("searching...");
         getMovies(searchText);
-        // searchText.prop("disabled", true).text("searching...");
+
         e.preventDefault();
 
     });
