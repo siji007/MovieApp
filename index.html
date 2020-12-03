@@ -25,25 +25,28 @@
     <div class="container ">
         <div class="jumbotron bg-success shadow-lg">
             <h3 class="text-center text-3xl mb-4">Search For Any Movie</h3>
-            <form id="searchForm">
-                <input type="text" class="form-control" id="searchText" placeholder="Search Movies...">
-            </form>
+            <div>
+                <form class="d-flex justify-content-center" id="searchForm">
+                    <input type="text" class="form-control " id="searchText" placeholder="Search Movies...">
+                    <button id="submit" class="btn btn-outline-light ml-4">Search</button>
+                </form>
+                <div>
+                </div>
+            </div>
+
         </div>
-    </div>
+        <div class="container">
+            <div id="movies" class="row">
 
-
-    <div class="container">
-        <div id="movies" class="row">
-
+            </div>
         </div>
-    </div>
 
-    <script src="js/jquery.min.js"></script>
-    <!-- <script src="https://unpkg.com/axios/dist/axios.min.js"></script> -->
-    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-    <script src="js/jquery.min.js">
-    </script>
-    <script src="js/main.js"></script>
+        <script src="js/jquery.min.js"></script>
+        <!-- <script src="https://unpkg.com/axios/dist/axios.min.js"></script> -->
+        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+        <script src="js/jquery.min.js">
+        </script>
+        <script src="js/main.js"></script>
 </body>
 
 </html>

@@ -2,7 +2,9 @@
 $(document).ready(() => {
     $('#searchForm').on('submit', (e) => {
         let searchText = $('#searchText').val();
-
+        let searchButton = $('#submit');
+        // searchText.prop("disabled", true);
+        // searchButton.attr("disabled", true).text("searching...");
         getMovies(searchText);
         // searchText.prop("disabled", true).text("searching...");
         e.preventDefault();
@@ -34,6 +36,8 @@ function getMovies(searchText) {
                 `;
             });
             $('#movies').html(output);
+            // searchButton.attr("disabled", false).text("Search");
+
 
         })
         .catch((err) => {
@@ -82,7 +86,10 @@ function getMovie() {
                </div>
             </div>
             `;
+
             $('#movie').html(output);
+            // searchText.prop("disabled", false);
+
 
         })
         .catch((err) => {
